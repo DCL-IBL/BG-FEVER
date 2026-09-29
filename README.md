@@ -1,5 +1,7 @@
 # Bulgarian FEVER (BG-FEVER): Bulgarian Fact Verification Dataset
 
+The dataset is available on Hugging Face: [https://huggingface.co/datasets/DCL-IBL/BG-FEVER](https://huggingface.co/datasets/DCL-IBL/BG-FEVER)
+
 ## Bulgarian TRAIN, DEV and Scientific Datasets
 
 This repository contains three Bulgarian-language datasets developed for research on claim verification, evidence retrieval, and the identification of scientifically relevant claims using Bulgarian Wikipedia.
@@ -266,7 +268,7 @@ The article collections preserve the local Train and Dev structure. Articles tha
 The repository is organized approximately as follows:
 
 ```
-Train, Dev, Scientific - fin/
+BG-FEVER/
 │
 ├── Bulgarian/
 │   │
@@ -370,8 +372,8 @@ These data annotations incorporate material from Wikipedia, which is licensed pu
   title        = {BG-FEVER: A Bulgarian Fact Verification Dataset},
   author       = {Tsvetana Dimitrova and Mihaela Moskova},
   year         = {2026},
-  publisher    = {GitHub},
-  howpublished = {\url{https://github.com/DCL-IBL/BG-FEVER}},
+  publisher    = {Hugging Face},
+  howpublished = {\url{https://huggingface.co/datasets/DCL-IBL/BG-FEVER}},
   note         = {Developed within the LLMs4EU project, Digital Europe Programme, Grant Agreement No. 101198470}
 }
 ```
