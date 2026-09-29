@@ -16,7 +16,7 @@ The datasets are accompanied by local collections of Bulgarian Wikipedia article
 
 The Bulgarian Fact Verification Dataset is developed within the LLMs4EU project, Digital Europe Programme, Grant Agreement No. 101198470.
 
-## 1. Dataset Overview
+## Dataset Overview
 
 The datasets are based on a FEVER-style claim verification framework. Each claim is associated with a verification label and, where applicable, Wikipedia evidence.
 
@@ -32,7 +32,7 @@ The final collection therefore contains **122,598 claim records** across the thr
 
 The datasets are stored in JSONL format, with one claim per line.
 
-## 2. TRAIN-bg
+## TRAIN-bg
 
 ### Description
 
@@ -78,7 +78,7 @@ The fields are:
 - `claim` — the Bulgarian claim text;
 - `evidence` — Wikipedia evidence information, when available.
 
-## 3. DEV-bg
+## DEV-bg
 
 ### Description
 
@@ -116,7 +116,7 @@ The records use the same five-field structure as TRAIN-bg:
 }
 ```
 
-## 4. Scientific-bg
+## Scientific-bg
 
 ### Description
 
@@ -155,7 +155,7 @@ The Scientific dataset contains claims originating from both Bulgarian TRAIN and
 - **6,406 records** correspond to TRAIN claims;
 - **641 records** correspond to DEV claims.
 
-## 5. Scientific Claim Selection
+## Scientific Claim Selection
 
 The scientific subset was developed in several stages.
 
@@ -193,7 +193,7 @@ The resulting classification contained:
 
 The final Scientific dataset combines the relevant claims identified through these processing stages.
 
-## 6. Scientific Relevance Criterion
+## Scientific Relevance Criterion
 
 Scientific relevance is defined at the level of the claim itself.
 
@@ -233,7 +233,7 @@ The criterion deliberately excludes claims whose only connection with science is
 
 For example, a biographical statement about a scientist is not automatically classified as scientifically relevant. In contrast, a statement describing a scientific theory, method, process, or finding can be classified as scientifically relevant.
 
-## 7. Wikipedia Evidence
+## Wikipedia Evidence
 
 The datasets use Bulgarian Wikipedia as the main evidence source.
 
@@ -247,7 +247,7 @@ The final collection includes local Bulgarian Wikipedia article collections for:
 
 The article files are stored as JSON files containing the article title and its sentence-level representation.
 
-## 8. Local Wikipedia Article Collections
+## Local Wikipedia Article Collections
 
 The final archive contains the following local article collections:
 
@@ -261,7 +261,7 @@ The Scientific article collection contains **275 locally prepared Wikipedia arti
 
 The article collections preserve the local Train and Dev structure. Articles that occur in more than one source collection are not artificially removed; the original corpus structure is retained.
 
-## 9. File Structure
+## File Structure
 
 The repository is organized approximately as follows:
 
@@ -283,7 +283,7 @@ Train, Dev, Scientific - fin/
     └── articles/
 ```
 
-## 10. JSONL Format
+## JSONL Format
 
 All three claim datasets use JSON Lines format.
 
@@ -324,7 +324,7 @@ For claims without evidence:
 }
 ```
 
-## 11. Data Quality and Manual Verification
+## Data Quality and Manual Verification
 
 The datasets were processed using a combination of automated procedures, diagnostic analysis, and manual verification.
 
@@ -341,7 +341,7 @@ Additional manual verification was performed on the Scientific dataset. A final 
 
 The purpose of these checks was to identify inconsistencies and improve the reliability of the automatically processed data before subsequent evidence-retrieval experiments.
 
-## 12. Summary Statistics
+## Summary Statistics
 
 | Property | TRAIN-bg | DEV-bg | Scientific-bg |
 |---|---:|---:|---:|
