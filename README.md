@@ -243,8 +243,8 @@ Evidence records identify the relevant Wikipedia page and evidence sentence. Thi
 
 The final collection includes local Bulgarian Wikipedia article collections for:
 
-- TRAIN;
-- DEV;
+- TRAIN-bg;
+- DEV-bg;
 - the Scientific subset.
 
 The article files are stored as JSON files containing the article title and its sentence-level representation.
@@ -272,11 +272,11 @@ BG-FEVER/
 │
 ├── Bulgarian/
 │   │
-│   ├── Train/
+│   ├── TRAIN-bg/
 │   │   ├── train-bg-final.jsonl
 │   │   └── articles/
 │   │
-│   └── Dev/
+│   └── DEV-bg/
 │       ├── dev-bg-final.jsonl
 │       └── articles/
 │
